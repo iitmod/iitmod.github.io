@@ -3,4 +3,4 @@
 	url = https://github.com/iitmod/iitmod.github.io
 [submodule "IITMOD/Themes/hugo-html5up-alpha"]
         path= IITMOD/Themes/hugo-html5up-alpha
-	url= https://github.com/iitmod/iitmod.github.io
+	url= IITMOD/Themes/hugo-html5up-alpha
