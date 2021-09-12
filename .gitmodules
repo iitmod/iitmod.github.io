@@ -1,0 +1,3 @@
+[submodule "IITMOD/Public"]
+	path = IITMOD/Public
+	url = https://github.com/iitmod/iitmod.github.io
