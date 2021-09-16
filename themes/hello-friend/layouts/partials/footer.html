@@ -1,0 +1,24 @@
+<footer class="footer">
+  <div class="footer__inner">
+    {{ if $.Site.Copyright }}
+      <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
+      {{ else }}
+      {{ partial "logo.html" . }}
+      <div class="copyright">
+        <span
+          >© {{ now.Year }} Website by
+          <a href="https://iitmod.github.io" target="_blank" rel="noopener">Linux group</a></span
+        >
+        <span
+          >This was a fucking simple website
+          <a href="https://iitmod.github.io" target="_blank" rel="noopener">lol</a></span
+        >
+      </div>
+    {{ end }}
+  </div>
+</footer>
+
+<script src="{{ "assets/main.js" | absURL }}"></script>
+<script src="{{ "assets/prism.js" | absURL }}"></script>
+
+{{- partial "extended_footer.html" . }}
