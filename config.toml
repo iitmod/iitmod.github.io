@@ -11,11 +11,11 @@ pluralizeListTitles = false
 enableemoji = false
 
 [params]
-    description = "A description for the meta tag of the site"
+    description = "IITM Bsc Data science resources"
     googleSearch = "google-search-code"
     showDate = false # make false if dont want to show date for evergeen articles
     math = false # best to enable this in the front matter of a page
-    githubLink = "github.com/iitmod/"
+    githubLink = "https://github.com/iitmod/"
 
     tagsInHome =0     # set zero to not show in home page
     sectionsInHome =0   # set zero to not show in home page
