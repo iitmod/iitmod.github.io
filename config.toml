@@ -1,48 +1,60 @@
-baseurl = "https://iitmod.github.io"
+baseURL = "https://iitmod.github.io/"
+#CanonifyURLs=true
+
 languageCode = "en-us"
-theme = "hello-friend"
-paginate = 5
+theme = "ramium"
+
+title = "IITMOD"
+disqusShortname = "disqus-code"
+googleAnalytics = "analytics-code"
+pluralizeListTitles = false
+enableemoji = false
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "post"
-  # "light" or "dark"
-  defaultTheme = "dark"
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
-  # Enable to show reading time in minutes for posts
-  showReadingTime = false
+    description = "A description for the meta tag of the site"
+    googleSearch = "google-search-code"
+    showDate = false # make false if dont want to show date for evergeen articles
+    math = false # best to enable this in the front matter of a page
+    githubLink = "github.com/iitmod/"
 
-[languages]
-  [languages.en]
-    title = "IITMOD"
-    subtitle = "IITM Bsc resources"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
+    tagsInHome =0     # set zero to not show in home page
+    sectionsInHome =0   # set zero to not show in home page
+    paginatePostsPerPage = 5
+    paginateTagsPerPage = 6
 
-    [languages.en.params.logo]
-      logoText = "$ exec iitmod"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+[taxonomies]
+    tag = "tags"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+[markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "blog"
+        name = "Sections"
+        weight = 2
+            [[menu.main]]
+                parent = "blog"
+                name = "Foundtion"
+                url = "/"
+                weight = 1
+            [[menu.main]]
+                parent = "blog"
+                name = "Diploma"
+                url = "/"
+                weight = 2
+            [[menu.main]]
+                parent = "blog"
+                name = "Degree"
+                url = "/"
+                weight = 3
+    
+    [[menu.main]]
+        name = "About us"
+        url = "/authorr/"
+        weight = 3
