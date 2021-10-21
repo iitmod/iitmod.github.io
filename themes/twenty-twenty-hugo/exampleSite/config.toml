@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "/"
-title = "IITMOD"
+baseURL = "https://examplesite.com"
+title = "Twenty Twenty Hugo"
 theme = "twenty-twenty-hugo"
 languageName = "En"
 languageCode = "en-us"
@@ -82,15 +82,15 @@ expire_days = 2
 
 # banner
 [params.banner]
-heading = "IITMOD resource page"
+heading = "The New UMoMA Opens its Doors"
 image = "images/2020-landscape-1-2.png"
 
 # blog
 [params.blog]
-heading = "Nothing special in here"
+heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
 
 # call to action
-#[params.call_to_action]
+[params.call_to_action]
 enable = true
 title = "Contact us for more information."
 content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis"
@@ -112,9 +112,10 @@ image = "images/2020-square-1.png"
 [params.footer]
 title = "About This Site"
 content = "This may be a good place to introduce yourself and your site or include some credits."
-#address = "123 Main Street <br> New York, NY 10001"
-#hours = "Monday–Friday: 9:00AM–5:00PM <br> Saturday & Sunday: 11:00AM–3:00PM"
-copyright = "Copyright &copy; 2021 IITMOD"
+address = "123 Main Street <br> New York, NY 10001"
+hours = "Monday–Friday: 9:00AM–5:00PM <br> Saturday & Sunday: 11:00AM–3:00PM"
+copyright = "Copyright &copy; 2021 a hugo theme by [themefisher](https://themefisher.com/hugo-themes/) ported from [WordPress Twenty Twenty](https://github.com/WordPress/twentytwenty)"
+
 ############################# social site ########################
 [params.social]
 yelp = "#"
